@@ -2,7 +2,6 @@ Execution plan:
 
 Each search involves looking up multiple tables
 Consider prioritising commonly accessed data (do sth to their keys)
-Think about relationships between tables (?)
 
 CRUD: create, read, update, delete
 
@@ -11,3 +10,6 @@ Styling: use Vanilla framework
 Actual tasks:
 1. come up with task manager that allows for CRUD of tasks
 2. tasks are to be tagged, which are used for searching
+
+Use cases:
+establishes rs between user and tables
