@@ -12,4 +12,17 @@ Actual tasks:
 2. tasks are to be tagged, which are used for searching
 
 Use cases:
-establishes rs between user and tables
+
+**********
+* Task 1 *
+**********
+- user keys in @name and @description of task in /tasks/new
+- user saves task (creation)
+- page redirects to list of names of tasks (/tasks)
+- if user selects task:
+	- shows full description #read
+	- allows for editing (directly display description in text box) #update
+	- includes @delete options #delete
+	if user selects delete:
+		- removes task from list of tasks in database
+			- thus name of task no longer appears in /tasks
