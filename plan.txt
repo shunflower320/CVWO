@@ -5,3 +5,5 @@ Consider prioritising commonly accessed data (do sth to their keys)
 Think about relationships between tables (?)
 
 CRUD: create, read, update, delete
+
+Styling: use Vanilla framework
