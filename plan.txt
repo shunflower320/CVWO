@@ -7,3 +7,7 @@ Think about relationships between tables (?)
 CRUD: create, read, update, delete
 
 Styling: use Vanilla framework
+
+Actual tasks:
+1. come up with task manager that allows for CRUD of tasks
+2. tasks are to be tagged, which are used for searching
