@@ -18,7 +18,7 @@ Use cases:
 **********
 - user keys in @name and @description of task in /tasks/new
 - user saves task (creation)
-- page redirects to list of names of tasks (/tasks)
+- page redirects to list of names of tasks (/tasks), each redirecting to a page for that task
 - if user selects task:
 	- shows full description #read
 	- allows for editing (directly display description in text box) #update
@@ -26,3 +26,9 @@ Use cases:
 	if user selects delete:
 		- removes task from list of tasks in database
 			- thus name of task no longer appears in /tasks
+
+**********
+* Task 2 *
+**********
+- include a "commonly accessed" list of tasks
+- user types into searchbar name of task, look up alphabetically
