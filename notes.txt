@@ -24,7 +24,7 @@ Use cases:
 	- <% @tasks.each do |task| %>
 	    <tr>
 	      <td><%= task.title %></td>
-	      <td><%= link_to 'Show', task_path(task) %></td>
+	      <td><%= link_to 'Show', task_path(task) %></td> #only if under same controller. What does that mean?
 	    </tr>
 	  <% end %>
 - if user selects task:
