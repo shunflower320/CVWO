@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{titling}
+
+\setlength{\droptitle}{-10em}
+\onehalfspacing
+
+\title{CVWO Mid-Assignment Submission}
+\author{Wang Xinman}
+\date{31 December 2018}
+
+\begin{document}
+\maketitle
+
+\section{Use Cases}
+\begin{table}[h!]
+    \centering
+    \bgroup
+    \def\arraystretch{2}%
+    \begin{tabular}{l|l}
+    User Action & Details\\
+        \hline
+        Creates and saves tasks & Page redirects to list of tasks\\
+        \hline
+        Reads tasks & \multirow{2}{*}{\parbox{7cm}{List of task names shown in index with link\_to show}}\\
+        \multirow{2}{*}{}\\
+        \hline
+        Updates tasks & \multirow{2}{*}{\parbox{7cm}{link\_to show directly brings user to page with textbox to edit}}\\
+        \multirow{2}{*}{}\\
+        \hline
+        Deletes tasks & \multirow{2}{*}{\parbox{7cm}{link\_to show redirects to page with delete option}}\\
+        \multirow{2}{*}{}\\
+        \hline
+        Views tags & All tags of every task is displayed on index\\
+        \hline
+        Selects tags & \multirow{2}{*}{\parbox{7cm}{Every tag is a link\_to a list of tasks with the specified tag}}\\
+        \multirow{2}{*}{}\\
+        \hline
+    \end{tabular}
+    \egroup
+\end{table}
+
+\section{Execution Plan}
+\paragraph{CRUD} Similar to /blog
+\paragraph{Tagging} Similar to comments in for articles in /blog, where each tag (in the form of a symbol :[tag name]) belongs\_to task, and each task has\_many :tags
+\end{document}
