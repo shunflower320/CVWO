@@ -19,6 +19,13 @@ Use cases:
 - user keys in @name and @description of task in /tasks/new
 - user saves task (creation)
 - page redirects to list of names of tasks (/tasks), each redirecting to a page for that task
+	- <%= link_to 'Tasks', controller: 'tasks' %>
+	- <% @tasks.each do |task| %>
+	    <tr>
+	      <td><%= task.title %></td>
+	      <td><%= link_to 'Show', task_path(task) %></td>
+	    </tr>
+	  <% end %>
 - if user selects task:
 	- shows full description #read
 	- allows for editing (directly display description in text box) #update
