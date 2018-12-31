@@ -1,0 +1,35 @@
+Execution plan:
+
+Each search involves looking up multiple tables
+Consider prioritising commonly accessed data (do sth to their keys)
+
+CRUD: create, read, update, delete
+
+Styling: use Vanilla framework
+
+Actual tasks:
+1. come up with task manager that allows for CRUD of tasks
+2. tasks are to be tagged, which are used for searching
+
+************
+* Task 1+2 *
+************
+- user keys in @name and @description of task in /tasks/new
+- user saves task (creation)
+- page redirects to list of names of tasks (/tasks), each redirecting to a page for that task
+	- <%= link_to 'Tasks', controller: 'tasks' %>
+	[put in table]
+	- <% @tasks.each do |task| %>
+	    <tr>
+	      <td><%= task.title %></td>
+	      <td><%= link_to 'Show', task_path(task) %></td> #only if under same controller. What does that mean?
+	    </tr>
+	  <% end %>
+- if user selects task:
+	- shows full description #read
+	- allows for editing (directly display description in text box) #update
+	- includes @delete options #delete
+	if user selects delete:
+		- removes task from list of tasks in database
+			- thus name of task no longer appears in /tasks
+- each task come with tags, displayed in index
