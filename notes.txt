@@ -11,11 +11,9 @@ Actual tasks:
 1. come up with task manager that allows for CRUD of tasks
 2. tasks are to be tagged, which are used for searching
 
-Use cases:
-
-**********
-* Task 1 *
-**********
+************
+* Task 1+2 *
+************
 - user keys in @name and @description of task in /tasks/new
 - user saves task (creation)
 - page redirects to list of names of tasks (/tasks), each redirecting to a page for that task
@@ -34,9 +32,4 @@ Use cases:
 	if user selects delete:
 		- removes task from list of tasks in database
 			- thus name of task no longer appears in /tasks
-
-**********
-* Task 2 *
-**********
-- include a "commonly accessed" list of tasks
-- user types into searchbar name of task, look up alphabetically
+- each task come with tags, displayed in index
