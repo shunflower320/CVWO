@@ -1,24 +1,8 @@
 # README
+Name: Wang Xinman
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Matriculation number: A0180257E
 
-Things you may want to cover:
+Rails startup page: rails.png
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Writeup: Mid_assignment_submission.pdf
