@@ -2134,3 +2134,23 @@ app/models/task.rb:13:in `tag_list'
 app/views/tasks/_form.html.erb:29:in `block in _app_views_tasks__form_html_erb___3280915538772681666_70365664766740'
 app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___3280915538772681666_70365664766740'
 app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__1059059449419542486_70365664891440'
+Started GET "/tasks/new" for 127.0.0.1 at 2019-01-09 18:37:10 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mandy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (26.3ms)
+  Rendered tasks/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 314ms (Views: 283.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2019-01-09 18:37:38 +0800
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8f46d7X/2ypDhmXHSGG66upHHk+uG9bMZmHbcIe0MJfYuyvxjw0TaTfrvZM7+MwYLRIrTmVK6guFkXV2mPMliA==", "task"=>{"title"=>"task1", "text"=>"Hello!!", "tag_list"=>"work, recreation"}, "commit"=>"Create Task"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'title' for Task.):
+  
+app/controllers/tasks_controller.rb:19:in `create'
