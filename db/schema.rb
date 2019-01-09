@@ -32,10 +32,4 @@ ActiveRecord::Schema.define(version: 2019_01_09_083809) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  create_table "todo_items", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

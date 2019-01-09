@@ -2154,3 +2154,27 @@ Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 ActiveModel::UnknownAttributeError (unknown attribute 'title' for Task.):
   
 app/controllers/tasks_controller.rb:19:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2019-01-09 18:40:17 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mandy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8f46d7X/2ypDhmXHSGG66upHHk+uG9bMZmHbcIe0MJfYuyvxjw0TaTfrvZM7+MwYLRIrTmVK6guFkXV2mPMliA==", "task"=>{"title"=>"task1", "text"=>"Hello!!", "tag_list"=>"work, recreation"}, "commit"=>"Create Task"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'title' for Task.):
+  
+app/controllers/tasks_controller.rb:19:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2019-01-09 19:27:37 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mandy/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8f46d7X/2ypDhmXHSGG66upHHk+uG9bMZmHbcIe0MJfYuyvxjw0TaTfrvZM7+MwYLRIrTmVK6guFkXV2mPMliA==", "task"=>{"title"=>"task1", "text"=>"Hello!!", "tag_list"=>"work, recreation"}, "commit"=>"Create Task"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'title' for Task.):
+  
+app/controllers/tasks_controller.rb:19:in `create'
