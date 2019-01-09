@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_09_083809) do
+ActiveRecord::Schema.define(version: 2019_01_09_165311) do
 
   create_table "taggings", force: :cascade do |t|
     t.integer "task_id"
@@ -29,7 +29,9 @@ ActiveRecord::Schema.define(version: 2019_01_09_083809) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
+    t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end
