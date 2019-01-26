@@ -3,21 +3,25 @@
 
 <table>
   <tr>
+    <th>Number</th>
     <th>Title</th>
     <th>Text</th>
+    <th>Tags</th>
     <th></th>
   </tr>
- 
+  <% count = 1 %> 
   <% @tasks.each do |task| %>
     <tr>
+      <td><%= count %></td>
       <td><%= task.title %></td>
       <td><%= task.text %></td>
-      <td><%= link_to 'Show', task_path(task) %></td>
+      <td><%= raw task.tags.map(&:name).map{|tag| link_to tag, tag_path(tag)}.join(", ") %></td>
+      <td><%= link_to 'Show', (task) %></td>
       <td><%= link_to 'Edit', edit_task_path(task) %></td>
       <td><%= link_to 'Delete', task_path(task),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
-      <td><%= raw task.tag_list %></td>
+      <% count += 1 %>
     </tr>
   <% end %>
 </table>

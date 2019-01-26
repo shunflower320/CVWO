@@ -10,7 +10,7 @@
 
 <p>
 	<strong>Tags:</strong>
-	<%= raw @task.tag_list %>
+	<%= raw @task.tags.map(&:name).map{|tag| link_to tag, tag_path(tag)}.join(", ") %>
 </p>
  
 <%= link_to 'Edit', edit_task_path(@task) %> |

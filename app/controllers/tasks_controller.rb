@@ -17,7 +17,6 @@ class TasksController < ApplicationController
 
 	def create
 		@task = Task.new(task_params)
-
 		if @task.save
 			redirect_to @task
 		else
@@ -43,15 +42,11 @@ class TasksController < ApplicationController
   	end
 
   	def tagged
-  		if params[:tag].present?
-  			@tasks = Task.tagged_with(params[:tag])
-  		else
-  			@tasks = Task.all
-  		end
+  		@tasks = Task.tagged_with(params[:tag])
   	end
 
 	private
 	  def task_params
-	  	params.require(:task).permit(:title, :text, :tag_list)
+  		params.require(:task).permit(:title, :text, :tag_list)
 	  end
 end
